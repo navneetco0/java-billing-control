@@ -1,0 +1,2 @@
+Main-Class: App
+Class-Path: lib/ojdbc11.jar
