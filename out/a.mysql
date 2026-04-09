@@ -1,0 +1,726 @@
+-- ============================================================
+--  EMPLOYEE MANAGEMENT SYSTEM — REALISTIC SEED DATA  (FIXED)
+--  ORA-00947 fix: all INSERTs now list columns explicitly
+--  Compatible with Oracle DB
+--  Generated: April 2026
+-- ============================================================
+
+-- ─────────────────────────────────────────────────────────────
+-- 0. CLEANUP (uncomment to re-seed cleanly)
+-- ─────────────────────────────────────────────────────────────
+-- DELETE FROM employee_attendance;
+-- DELETE FROM salary_master;
+-- DELETE FROM employee_details;
+-- COMMIT;
+
+
+-- ─────────────────────────────────────────────────────────────
+-- 1. EMPLOYEE DETAILS  (20 employees)
+-- ─────────────────────────────────────────────────────────────
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+  'Arjun Mehta','Male',
+  TO_DATE('1990-03-15','YYYY-MM-DD'), TO_DATE('2018-06-01','YYYY-MM-DD'),
+  '12, Shivaji Nagar, Pune - 411005',
+  '020-27654321','9823456701','arjun.mehta@techcorp.in',
+  52000.00,'Senior Developer – Backend');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+  'Priya Sharma','Female',
+  TO_DATE('1993-07-22','YYYY-MM-DD'), TO_DATE('2019-03-10','YYYY-MM-DD'),
+  '45, Koramangala 5th Block, Bengaluru - 560095',
+  '080-41234567','9845612302','priya.sharma@techcorp.in',
+  47500.00,'UI/UX Designer');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+  'Rohan Desai','Male',
+  TO_DATE('1988-11-08','YYYY-MM-DD'), TO_DATE('2015-09-01','YYYY-MM-DD'),
+  'Flat 3B, Andheri West, Mumbai - 400053',
+  '022-26543210','9920134503','rohan.desai@techcorp.in', 68000.00,'Tech Lead – Full Stack');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Sneha Pillai','Female',
+  TO_DATE('1995-02-14','YYYY-MM-DD'), TO_DATE('2021-01-15','YYYY-MM-DD'),
+  '78, Anna Nagar East, Chennai - 600040',
+  '044-23456789','9444567804','sneha.pillai@techcorp.in',
+  38000.00,'QA Engineer');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+ 'Karan Joshi','Male',
+  TO_DATE('1987-05-30','YYYY-MM-DD'), TO_DATE('2013-11-01','YYYY-MM-DD'),
+  '22, Sector 14, Gurugram - 122001',
+  '0124-4567890','9810056705','karan.joshi@techcorp.in',
+  85000.00,'Engineering Manager');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Divya Nair','Female',
+  TO_DATE('1992-09-18','YYYY-MM-DD'), TO_DATE('2017-04-03','YYYY-MM-DD'),
+  '101, Hitech City, Hyderabad - 500081',
+  '040-23456780','9848901206','divya.nair@techcorp.in',
+  55000.00,'Data Analyst');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Amit Verma','Male',
+  TO_DATE('1991-12-25','YYYY-MM-DD'), TO_DATE('2020-07-20','YYYY-MM-DD'),
+  '55, Vaishali Nagar, Jaipur - 302021',
+  '0141-2345678','9414567807','amit.verma@techcorp.in',
+  42000.00,'DevOps Engineer');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Meera Iyer','Female',
+  TO_DATE('1994-04-11','YYYY-MM-DD'), TO_DATE('2022-02-28','YYYY-MM-DD'),
+  '33, Banjara Hills Road 12, Hyderabad - 500034',
+  '040-23456782','9989234508','meera.iyer@techcorp.in',
+  36000.00,'Junior Developer – Frontend');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Siddharth Rao','Male',
+  TO_DATE('1986-08-03','YYYY-MM-DD'), TO_DATE('2012-05-15','YYYY-MM-DD'),
+  '9, Juhu Tara Road, Mumbai - 400049',
+  '022-26543219','9821045609','siddharth.rao@techcorp.in',
+  92000.00,'VP Engineering');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Anjali Gupta','Female',
+  TO_DATE('1996-01-29','YYYY-MM-DD'), TO_DATE('2023-08-07','YYYY-MM-DD'),
+  '14, Civil Lines, Allahabad - 211001',
+  '0532-2345678','9415678910','anjali.gupta@techcorp.in',
+  31500.00,'HR Executive');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Vikram Singh','Male',
+  TO_DATE('1989-06-17','YYYY-MM-DD'), TO_DATE('2016-10-10','YYYY-MM-DD'),
+  '67, Ashok Vihar Phase 2, Delhi - 110052',
+  '011-27456789','9810345611','vikram.singh@techcorp.in',
+  61000.00,'Cloud Architect');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Pooja Kulkarni','Female',
+  TO_DATE('1993-10-05','YYYY-MM-DD'), TO_DATE('2018-12-01','YYYY-MM-DD'),
+  '8, FC Road, Deccan Gymkhana, Pune - 411004',
+  '020-25432100','9823190012','pooja.kulkarni@techcorp.in',
+  49000.00,'Business Analyst');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Rahul Pandey','Male',
+  TO_DATE('1990-02-20','YYYY-MM-DD'), TO_DATE('2019-06-17','YYYY-MM-DD'),
+  'A-204, Satellite Road, Ahmedabad - 380015',
+  '079-26543217','9879345613','rahul.pandey@techcorp.in',
+  44000.00,'Mobile Developer – Android');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Kavita Reddy','Female',
+  TO_DATE('1985-12-31','YYYY-MM-DD'), TO_DATE('2010-03-01','YYYY-MM-DD'),
+  '77, Jubilee Hills Road 36, Hyderabad - 500033',
+  '040-23456714','9849901214','kavita.reddy@techcorp.in',
+  78000.00,'Product Manager');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Nikhil Bose','Male',
+  TO_DATE('1997-07-04','YYYY-MM-DD'), TO_DATE('2024-01-02','YYYY-MM-DD'),
+  '12A, Salt Lake Sector V, Kolkata - 700091',
+  '033-23456715','9830901215','nikhil.bose@techcorp.in',
+  28000.00,'Trainee – Software Engineer');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Swati Jain','Female',
+  TO_DATE('1991-03-09','YYYY-MM-DD'), TO_DATE('2017-08-21','YYYY-MM-DD'),
+  '302, Malviya Nagar, Jaipur - 302017',
+  '0141-2345619','9414345616','swati.jain@techcorp.in',
+  53500.00,'Scrum Master');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Deepak Kumar','Male',
+  TO_DATE('1988-09-13','YYYY-MM-DD'), TO_DATE('2014-04-07','YYYY-MM-DD'),
+  '19, Indiranagar 100 Feet Road, Bengaluru - 560038',
+  '080-41234517','9845217817','deepak.kumar@techcorp.in',
+  71000.00,'Database Administrator');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Lakshmi Venkat','Female',
+  TO_DATE('1994-11-27','YYYY-MM-DD'), TO_DATE('2020-11-16','YYYY-MM-DD'),
+  '88, T Nagar, Chennai - 600017',
+  '044-23456718','9444218018','lakshmi.venkat@techcorp.in',
+  40500.00,'Content Strategist');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Gaurav Tiwari','Male',
+  TO_DATE('1992-05-01','YYYY-MM-DD'), TO_DATE('2018-09-03','YYYY-MM-DD'),
+  'C-45, Gomti Nagar, Lucknow - 226010',
+  '0522-2345619','9415901219','gaurav.tiwari@techcorp.in',
+  46500.00,'Network Engineer');
+
+INSERT INTO employee_details (emp_name, gender, dob, doj, address, phone, mobile_no, email_id, bsalary, narration) VALUES (
+'Ritu Agarwal','Female',
+  TO_DATE('1990-08-16','YYYY-MM-DD'), TO_DATE('2016-07-11','YYYY-MM-DD'),
+  'B-12, Dwarka Sector 6, New Delhi - 110075',
+  '011-27456720','9810456720','ritu.agarwal@techcorp.in',
+  57000.00,'Security Analyst');
+
+COMMIT;
+
+
+-- ─────────────────────────────────────────────────────────────
+-- 2. EMPLOYEE ATTENDANCE  (March 2026 working days)
+--    att_id is IDENTITY – do NOT include in INSERT
+-- ─────────────────────────────────────────────────────────────
+
+-- ── 1 – Arjun Mehta ──────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-06','YYYY-MM-DD'),'Half-Day','Doctor appointment');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-17','YYYY-MM-DD'),'Absent','Sick leave');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-18','YYYY-MM-DD'),'Absent','Sick leave');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('1',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 2 – Priya Sharma ─────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-04','YYYY-MM-DD'),'Leave','Planned personal leave');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-05','YYYY-MM-DD'),'Leave','Planned personal leave');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-12','YYYY-MM-DD'),'Half-Day','WFH half day');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-27','YYYY-MM-DD'),'Absent','No information');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('2',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 3 – Rohan Desai ──────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','On-site client visit');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','On-site client visit');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-19','YYYY-MM-DD'),'Half-Day','Left early – family function');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('3',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 4 – Sneha Pillai ─────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-03','YYYY-MM-DD'),'Absent','Sick – fever');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-04','YYYY-MM-DD'),'Absent','Sick – fever');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-18','YYYY-MM-DD'),'Half-Day','Testing sprint handover');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-30','YYYY-MM-DD'),'Leave','Casual leave approved');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('4',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 5 – Karan Joshi ──────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','Leadership offsite');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','Leadership offsite');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-23','YYYY-MM-DD'),'Absent','Personal emergency');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('5',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 6 – Divya Nair (perfect attendance) ──────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('6',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 7 – Amit Verma (3 leave days mid-month) ─────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-04','YYYY-MM-DD'),'Absent','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-09','YYYY-MM-DD'),'Half-Day','Server migration morning');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-16','YYYY-MM-DD'),'Leave','Annual leave');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-17','YYYY-MM-DD'),'Leave','Annual leave');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-18','YYYY-MM-DD'),'Leave','Annual leave');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('7',TO_DATE('2026-03-31','YYYY-MM-DD'),'Half-Day','Left early – vehicle issue');
+
+-- ── 8 – Meera Iyer ───────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-05','YYYY-MM-DD'),'Half-Day','Internship orientation session');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-11','YYYY-MM-DD'),'Absent','Sick – migraine');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-26','YYYY-MM-DD'),'Leave','Maternity check-up');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('8',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 9 – Siddharth Rao (VP – 4 leave days travel) ────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','Board meeting');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-17','YYYY-MM-DD'),'Leave','International travel – client');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-18','YYYY-MM-DD'),'Leave','International travel – client');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-19','YYYY-MM-DD'),'Leave','International travel – client');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-20','YYYY-MM-DD'),'Leave','International travel – client');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('9',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 10 – Anjali Gupta ─────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-05','YYYY-MM-DD'),'Absent','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','HR induction batch');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','HR induction batch');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-20','YYYY-MM-DD'),'Half-Day','Appraisal interviews AM');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('10',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 11 – Vikram Singh ─────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-09','YYYY-MM-DD'),'Leave','AWS re:Invent training');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-10','YYYY-MM-DD'),'Leave','AWS re:Invent training');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-30','YYYY-MM-DD'),'Half-Day','VPN maintenance');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('11',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 12 – Pooja Kulkarni ───────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','Requirement gathering');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-12','YYYY-MM-DD'),'Half-Day','Client call PM');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-16','YYYY-MM-DD'),'Absent','Sick');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('12',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 13 – Rahul Pandey ─────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-09','YYYY-MM-DD'),'Half-Day','App store release');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-30','YYYY-MM-DD'),'Leave','Personal');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('13',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 14 – Kavita Reddy ─────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','Q1 review');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','Roadmap planning');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-18','YYYY-MM-DD'),'Half-Day','Investor briefing AM');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('14',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 15 – Nikhil Bose ──────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-16','YYYY-MM-DD'),'Absent','Health issue');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-17','YYYY-MM-DD'),'Absent','Health issue');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('15',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 16 – Swati Jain ───────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','Sprint planning');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','Sprint review');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','Retrospective');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-23','YYYY-MM-DD'),'Half-Day','Team outing PM');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('16',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 17 – Deepak Kumar ─────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','DB patching');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-23','YYYY-MM-DD'),'Leave','Vacation');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-24','YYYY-MM-DD'),'Leave','Vacation');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-25','YYYY-MM-DD'),'Leave','Vacation');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('17',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 18 – Lakshmi Venkat ───────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','Content deadline');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-16','YYYY-MM-DD'),'Absent','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-30','YYYY-MM-DD'),'Half-Day','Left early');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('18',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 19 – Gaurav Tiwari ────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','Network audit');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-16','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-30','YYYY-MM-DD'),'Leave','Sick leave');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('19',TO_DATE('2026-03-31','YYYY-MM-DD'),'Present','');
+
+-- ── 20 – Ritu Agarwal ─────────────────────────────────
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-02','YYYY-MM-DD'),'Present','Pen-test review');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-03','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-04','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-05','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-06','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-09','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-10','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-11','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-12','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-13','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-16','YYYY-MM-DD'),'Half-Day','Security drill AM');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-17','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-18','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-19','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-20','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-23','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-24','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-25','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-26','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-27','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-30','YYYY-MM-DD'),'Present','');
+INSERT INTO employee_attendance (emp_id, att_date, status, remarks) VALUES ('20',TO_DATE('2026-03-31','YYYY-MM-DD'),'Absent','Unplanned absence');
+
+COMMIT;
+
+
+-- ─────────────────────────────────────────────────────────────
+-- 3. SALARY MASTER
+--    HRA=20% bsal | DA=15% bsal | TA flat | PF=12% bsal
+-- ─────────────────────────────────────────────────────────────
+
+-- ── JANUARY 2026 (Paid) ───────────────────────────────────
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('1','Arjun Mehta',   'January','2026',52000,10400,7800,1200,6240,0,65160,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('2','Priya Sharma',  'January','2026',47500,9500,7125,1200,5700,0,59625,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('3','Rohan Desai',   'January','2026',68000,13600,10200,1500,8160,0,75140,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('4','Sneha Pillai',  'January','2026',38000,7600,5700,1000,4560,0,47740,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('5','Karan Joshi',   'January','2026',85000,17000,12750,2000,10200,0,106550,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('6','Divya Nair',    'January','2026',55000,11000,8250,1200,6600,0,68850,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('7','Amit Verma',    'January','2026',42000,8400,6300,1000,5040,0,52660,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('8','Meera Iyer',    'January','2026',36000,7200,5400,800,4320,0,45080,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('9','Siddharth Rao', 'January','2026',92000,18400,13800,2500,11040,1000,114660,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('10','Anjali Gupta',  'January','2026',31500,6300,4725,800,3780,0,39545,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('11','Vikram Singh',  'January','2026',61000,12200,9150,1200,7320,0,76230,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('12','Pooja Kulkarni','January','2026',49000,9800,7350,1000,5880,0,61270,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('13','Rahul Pandey',  'January','2026',44000,8800,6600,1000,5280,0,55120,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('14','Kavita Reddy',  'January','2026',78000,15600,11700,2000,9360,500,97440,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('15','Nikhil Bose',   'January','2026',28000,5600,4200,800,3360,0,35240,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('16','Swati Jain',    'January','2026',53500,10700,8025,1200,6420,0,67005,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('17','Deepak Kumar',  'January','2026',71000,14200,10650,1500,8520,0,88830,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('18','Lakshmi Venkat','January','2026',40500,8100,6075,1000,4860,0,50815,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('19','Gaurav Tiwari', 'January','2026',46500,9300,6975,1200,5580,0,58395,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('20','Ritu Agarwal',  'January','2026',57000,11400,8550,1200,6840,0,71310,'Paid');
+
+-- ── FEBRUARY 2026 (all Paid) ──────────────────────────────
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('1','Arjun Mehta',   'February','2026',52000,10400,7800,1200,6240,0,65160,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('2','Priya Sharma',  'February','2026',47500,9500,7125,1200,5700,0,59625,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('3','Rohan Desai',   'February','2026',68000,13600,10200,1500,8160,500,74640,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('4','Sneha Pillai',  'February','2026',38000,7600,5700,1000,4560,0,47740,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('5','Karan Joshi',   'February','2026',85000,17000,12750,2000,10200,0,106550,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('6','Divya Nair',    'February','2026',55000,11000,8250,1200,6600,0,68850,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('7','Amit Verma',    'February','2026',42000,8400,6300,1000,5040,0,52660,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('8','Meera Iyer',    'February','2026',36000,7200,5400,800,4320,0,45080,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('9','Siddharth Rao', 'February','2026',92000,18400,13800,2500,11040,1000,114660,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('10','Anjali Gupta',  'February','2026',31500,6300,4725,800,3780,0,39545,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('11','Vikram Singh',  'February','2026',61000,12200,9150,1200,7320,0,76230,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('12','Pooja Kulkarni','February','2026',49000,9800,7350,1000,5880,0,61270,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('13','Rahul Pandey',  'February','2026',44000,8800,6600,1000,5280,0,55120,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('14','Kavita Reddy',  'February','2026',78000,15600,11700,2000,9360,500,97440,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('15','Nikhil Bose',   'February','2026',28000,5600,4200,800,3360,0,35240,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('16','Swati Jain',    'February','2026',53500,10700,8025,1200,6420,0,67005,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('17','Deepak Kumar',  'February','2026',71000,14200,10650,1500,8520,0,88830,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('18','Lakshmi Venkat','February','2026',40500,8100,6075,1000,4860,0,50815,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('19','Gaurav Tiwari', 'February','2026',46500,9300,6975,1200,5580,0,58395,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('20','Ritu Agarwal',  'February','2026',57000,11400,8550,1200,6840,0,71310,'Paid');
+
+-- ── MARCH 2026 (mix: 3 Paid, 17 Pending – end of month) ──
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('1','Arjun Mehta',   'March','2026',52000,10400,7800,1200,6240,0,65160,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('2','Priya Sharma',  'March','2026',47500,9500,7125,1200,5700,500,59125,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('3','Rohan Desai',   'March','2026',68000,13600,10200,1500,8160,0,75140,'Paid');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('4','Sneha Pillai',  'March','2026',38000,7600,5700,1000,4560,800,46940,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('5','Karan Joshi',   'March','2026',85000,17000,12750,2000,10200,0,106550,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('6','Divya Nair',    'March','2026',55000,11000,8250,1200,6600,0,68850,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('7','Amit Verma',    'March','2026',42000,8400,6300,1000,5040,3000,49660,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('8','Meera Iyer',    'March','2026',36000,7200,5400,800,4320,0,45080,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('9','Siddharth Rao', 'March','2026',92000,18400,13800,2500,11040,0,115660,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('10','Anjali Gupta',  'March','2026',31500,6300,4725,800,3780,0,39545,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('11','Vikram Singh',  'March','2026',61000,12200,9150,1200,7320,0,76230,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('12','Pooja Kulkarni','March','2026',49000,9800,7350,1000,5880,0,61270,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('13','Rahul Pandey',  'March','2026',44000,8800,6600,1000,5280,0,55120,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('14','Kavita Reddy',  'March','2026',78000,15600,11700,2000,9360,500,97440,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('15','Nikhil Bose',   'March','2026',28000,5600,4200,800,3360,1500,33740,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('16','Swati Jain',    'March','2026',53500,10700,8025,1200,6420,0,67005,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('17','Deepak Kumar',  'March','2026',71000,14200,10650,1500,8520,0,88830,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('18','Lakshmi Venkat','March','2026',40500,8100,6075,1000,4860,600,50215,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('19','Gaurav Tiwari', 'March','2026',46500,9300,6975,1200,5580,0,58395,'Pending');
+INSERT INTO salary_master (emp_id,emp_name,month,year,bsalary,hra,da,ta,pf_deduction,other_deduction,net_salary,status) VALUES ('20','Ritu Agarwal',  'March','2026',57000,11400,8550,1200,6840,0,71310,'Pending');
+
+COMMIT;
+
+-- ─────────────────────────────────────────────────────────────
+-- TOTALS: 20 employees | 440 attendance rows | 60 salary rows
+-- ─────────────────────────────────────────────────────────────

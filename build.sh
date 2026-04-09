@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-APP_NAME="MyApp"
+APP_NAME="BillingAutomation"
 MAIN_CLASS="App"
 MAC_ID="com.myapp.billing"
 VERSION="1.0"
@@ -38,6 +38,7 @@ jpackage \
   --app-version "$VERSION" \
   --type dmg \
   --mac-package-identifier "$MAC_ID" \
+  --icon MyIcon.icns \
   --java-options "-Dapple.laf.useScreenMenuBar=true" \
   --java-options "-Dapple.awt.application.name=$APP_NAME"
 

@@ -6,8 +6,7 @@ public class App {
         System.setProperty("apple.awt.application.name", "MyApp");
 
         javax.swing.SwingUtilities.invokeLater(() -> {
-            LoginWindow lw = new LoginWindow();
-            lw.connectDB(); // Connect on EDT is fine for init; or use SwingWorker below
+            new LoginWindow();
         });
     }
 }
